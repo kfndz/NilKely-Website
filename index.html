@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
     <title>NilKely Cabeleireiros & Barbearia</title>
 </head>
 
@@ -22,7 +23,32 @@
     <main>
         <h1 class="title">NilKely</h1>
         <h3 class="subtitle">Cabeleireiros & Barbearia</h3>
-        
+
+        <div class="carrossel-container">
+            <div class="carrossel-interno">
+                <div class="carrossel-item">
+                    <img src="img/alfredo.jpg" alt="Imagem 1">
+                </div>
+                <div class="carrossel-item">
+                    <img src="img/fazer.jpg" alt="Imagem 2">
+                </div>
+                <div class="carrossel-item">
+                    <img src="img/joca.jpg" alt="Imagem 3">
+                </div>
+            </div>
+
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(0)"></span>
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+            </div>
+
+            
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+
+        </div>
+
     </main>
 
     <script src="script.js"></script>
