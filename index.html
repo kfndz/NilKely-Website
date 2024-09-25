@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>NilKely Cabeleireiros & Barbearia</title>
 </head>
 
 <body>
     <header class="header">
         <nav class="navbar">
+            <h1 class="nk">NK</h1>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Serviços</a></li>
@@ -23,33 +23,75 @@
     <main>
         <h1 class="title">NilKely</h1>
         <h3 class="subtitle">Cabeleireiros & Barbearia</h3>
-
         <div class="carrossel-container">
             <div class="carrossel-interno">
                 <div class="carrossel-item">
-                    <img src="img/alfredo.jpg" alt="Imagem 1">
+                    <img src="img/imgsalao1.jfif" alt="Imagem 1" />
                 </div>
                 <div class="carrossel-item">
-                    <img src="img/fazer.jpg" alt="Imagem 2">
+                    <img src="img/imgsalao2.jfif" alt="Imagem 2" />
                 </div>
                 <div class="carrossel-item">
-                    <img src="img/joca.jpg" alt="Imagem 3">
+                    <img src="img/imgsalao3.jfif" alt="Imagem 3" />
+                </div>
+                <div class="carrossel-item">
+                    <img src="img/imgsalao4.jfif" alt="Imagem 4" />
+                </div>
+                <div class="carrossel-item">
+                    <img src="img/imgsalao5.jfif" alt="Imagem 5" />
                 </div>
             </div>
-
             <div class="carousel-indicators">
                 <span class="indicator active" onclick="currentSlide(0)"></span>
                 <span class="indicator" onclick="currentSlide(1)"></span>
                 <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+                <span class="indicator" onclick="currentSlide(4)"></span>
             </div>
-
-            
-            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
-
+            <button class="carousel-control prev" onclick="prevSlide()">
+                &#10094;
+            </button>
+            <button class="carousel-control next" onclick="nextSlide()">
+                &#10095;
+            </button>
         </div>
-
     </main>
+    <article>
+        <h1>Produtos</h1>
+        <span class="linha"></span>
+    </article>
+    <section>
+        <div class="box-card">
+            <div class="card">
+                <img src="img/produto1.jpg" alt="Produto 1">
+                <h2>Kit Pomada de Cabelo</h2>
+            </div>
+            <div class="card">
+                <img src="img/produto2.jpg" alt="Produto 2">
+                <h2> Clear Man CR7</h2>
+            </div>
+            <div class="card">
+                <img src="img/produto3.jpg" alt="Produto 3">
+                <h2>Kit Shampoo e Máscara</h2>
+            </div>
+            <div class="card">
+                <img src="img/produto4.jpg" alt="Produto 4">
+                <h2>Kit Escovas</h2>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <address>
+            <p>Rua Tenente Cipriano, 70A, Centro-Norte Várzea Grande-MT</p>
+            <p> <mark>(65) 3682-7255 </mark> </p>
+        </address>
+        <time datetime="2024-08-07T16:40">25 de Setembro de 2024</time>
+        <details>
+            <summary>Informações Adicionais</summary>
+            <p>Para mais detalhes, entre em contato conosco.</p>
+        </details>
+        <p>&copy; 2024 NilKely C&B. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

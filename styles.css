@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -8,6 +15,7 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #121212;
+    overflow-x: hidden;
 
 }
 
@@ -16,11 +24,23 @@ body {
     width: 100vw;
     height: 18vh;
     padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
     box-shadow: 0 0 4px white;
+    cursor: pointer;
+}
+
+.nk {
+    position: absolute;
+    top: 40px;
+    font-size: 40px;
+    font-family: "Great Vibes", cursive;
+    color: yellow;
 }
 
 .navbar {
-    padding: 3.5rem;
+    margin: 3rem;
+    
 }
 
 .navbar ul {
@@ -41,6 +61,14 @@ body {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 17px;
+    
+}
+
+.navbar li a:hover {
+    background-color: yellow;
+    cursor: pointer;
+    border-radius: 8px;
+    color: black;
 }
 
 .title {
@@ -73,9 +101,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transition: transform 3s ease-in-out;
-
-
+    transition: 3s ease-in-out;
 }
 
 .carrossel-item {
@@ -129,4 +155,74 @@ body {
 
 .next {
     right: 31%
+}
+
+.box-card {
+    width: 100dvw;
+    height: 65dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+article {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    color: yellow;
+}
+
+article h1 {
+    font-size: 24pt;
+}
+
+article span {
+    width: 180px;
+    height: 5px;
+    background-color: rgba(255, 255, 0, 0.748);
+    border-radius: 12px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+    gap: 40px;
+    width: 15%;
+    height: 65%;
+    background-color: #3a3a3a;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 10px 60px #ffffff24;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 100ms ease-in;
+}
+
+.box-card img {
+    margin-top: 5%;
+    width: 75%;
+    border-radius: 12px;
+
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+
+}
+
+address {
+    font-style: normal;
 }
